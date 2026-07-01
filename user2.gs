@@ -52,27 +52,22 @@ function doPost(e) {
     switch (userMessage) {
 
       case "エアコン ON/OFF":
-        turnOnAircon();
         replyText = "エアコンを ON（冷房25℃）にしました。";
         break;
 
       case "さげる":
-        changeTemperature(-1);
         replyText = "温度を 1℃ 下げました。";
         break;
 
       case "あげる":
-        changeTemperature(1);
         replyText = "温度を 1℃ 上げました。";
         break;
 
       case "冷房":
-        turnOnAircon();
         replyText = "冷房モードに設定しました。";
         break;
 
       case "除湿":
-        turnOnAirconDryMode();
         replyText = "除湿モードに設定しました。";
         break;
 
